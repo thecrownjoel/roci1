@@ -28,11 +28,11 @@ $.each( data, function( key, value ) {
     // console.log(key + ': ' + data[key].quote.latestPrice);
     var result = data[key].quote.latestPrice - myStocks[key];
     if (result <= -1) 
-        $('.result-neg').css({color: "red"});
+        var css_class = "result-pos";
       else {
-        $('.result-pos').css({color: "green"});
+        var css_class = "result-neg";
       }
-    $('#stocks').append('<li>' + key + ' ' + '$' + data[key].quote.latestPrice + ' ' + ' <i class="fas fa-caret-right"></i> ' + ' ' + '<span class="result">' + accounting.formatNumber(result, [precision = 0], [thousand = ","], [decimal = "."]) + '</span>' + '</li>');
+    $('#stocks').append('<li>' + key + ' ' + '$' + data[key].quote.latestPrice + ' ' + ' <i class="fas fa-caret-right"></i> ' + ' ' + '<span class="'+css_class+'">' + accounting.formatNumber(result, [precision = 0], [thousand = ","], [decimal = "."]) + '</span>' + '</li>');
   });
 
 });

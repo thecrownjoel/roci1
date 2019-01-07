@@ -17,14 +17,7 @@ body {
 }
 
 .wrapper1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 h1 {
@@ -53,11 +46,6 @@ h1 {
 }
 
 #refresh {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
 }
