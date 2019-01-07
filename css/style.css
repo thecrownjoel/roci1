@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+body {
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#121212), to(#000000));
+  background: linear-gradient(to right, #121212, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  border: 2px solid white;
+  margin: auto;
+}
+
+.wrapper1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3em;
+}
+
+#stocks li {
+  font-size: 3em;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+#stocks li .result-pos {
+  color: red;
+  font-size: 1em;
+}
+
+#stocks li .result-neg {
+  color: green;
+  font-size: 1em;
+}
+
+.fas fa-caret-right {
+  color: #222222;
+}
+
+#refresh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+}
+/*# sourceMappingURL=style.css.map */
