@@ -14,29 +14,16 @@ body {
 
 .container {
     max-width: 800px;
-    border: 2px solid white;
     margin: auto;
 }
 .wrapper1 {
     text-align: center;
-}
-h1 {
-    font-weight: 800;
-    font-size: 3em;
 }
 #stocks {
     li {
         font-size: 3em;
         list-style-type: none;
         font-weight: bold;
-        .result-pos {
-            color: red;
-            font-size: 1em;
-        }
-        .result-neg {
-            color: green;
-            font-size: 1em;
-        }
     }
 }
 .fas fa-caret-right {
@@ -45,4 +32,13 @@ h1 {
 #refresh {
     font-family: $font-stack;
     font-size: 2em;
+}
+
+.result-pos {
+    color: red;
+    font-size: 1em;
+}
+.result-neg {
+    color: green;
+    font-size: 1em;
 }

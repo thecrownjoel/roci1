@@ -12,7 +12,6 @@ body {
 
 .container {
   max-width: 800px;
-  border: 2px solid white;
   margin: auto;
 }
 
@@ -20,25 +19,10 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-weight: 800;
-  font-size: 3em;
-}
-
 #stocks li {
   font-size: 3em;
   list-style-type: none;
   font-weight: bold;
-}
-
-#stocks li .result-pos {
-  color: red;
-  font-size: 1em;
-}
-
-#stocks li .result-neg {
-  color: green;
-  font-size: 1em;
 }
 
 .fas fa-caret-right {
@@ -48,5 +32,15 @@ h1 {
 #refresh {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
+}
+
+.result-pos {
+  color: red;
+  font-size: 1em;
+}
+
+.result-neg {
+  color: green;
+  font-size: 1em;
 }
 /*# sourceMappingURL=style.css.map */
