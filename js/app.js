@@ -10,10 +10,11 @@ var myStocks = {
   EXAS: 78.20, 
   FB: 159.97, 
   GOOS: 66.60,
-  MDB: 43.53
+  MDB: 43.53,
+  TDOC: 54.40
 };
 
-var url = 'https://api.iextrading.com/1.0/stock/market/batch?symbols=aaxn,exas,fb,goos,mdb&types=quote';
+var url = 'https://api.iextrading.com/1.0/stock/market/batch?symbols=aaxn,exas,fb,goos,mdb,tdoc&types=quote';
 
 fetchStocks();
 setInterval(fetchStocks, 10000);
@@ -33,7 +34,7 @@ function fetchStocks() {
       $('table tbody').html('');
       $.each( data, function( key, value ) {
       var result = data[key].quote.latestPrice - myStocks[key];
-      if (result <= -1) 
+      if (result <= -0) 
           var css_class = "result-pos";
         else {
           var css_class = "result-neg";
